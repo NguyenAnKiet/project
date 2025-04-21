@@ -213,8 +213,7 @@ export const getAllTasksQueryFn = async ({
   dueDate,
   pageNumber,
   pageSize,
-}: AllTaskPayloadType
-): Promise<AllTaskResponseType> => {
+}: AllTaskPayloadType): Promise<AllTaskResponseType> => {
   const baseUrl = `/task/workspace/${workspaceId}/all`;
   const queryParams = new URLSearchParams();
   if (keyword) queryParams.append("keyword", keyword);
