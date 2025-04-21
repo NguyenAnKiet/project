@@ -40,8 +40,15 @@ const TaskTable = () => {
   const workspaceId = useWorkspaceId();
   const columns = getColumns(projectId);
 
-  const { data, isLoading } =useQuery ({
-    queryKey: ["all-tasks", workspaceId, pageSize, pageNumber, filters, projectId],
+  const { data, isLoading } = useQuery ({
+    queryKey: [
+      "all-tasks",
+       workspaceId,
+        pageSize,
+         pageNumber, 
+         filters, 
+         projectId
+        ],
     queryFn: () => getAllTasksQueryFn({
        workspaceId,
        keyword: filters.keyword,

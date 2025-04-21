@@ -230,4 +230,6 @@ export const getAllTasksQueryFn = async ({
   return response.data;
 };
 
-export const deleteTaskMutationFn = async () => {};
+export const deleteTaskMutationFn = async (
+  
+) => {};
